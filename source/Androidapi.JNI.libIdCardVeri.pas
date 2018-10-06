@@ -1,19 +1,15 @@
 ﻿// ====================================================
 //
-// 转换来自JarOrClass2Pas(原JavaClassToDelphiUnit)
-// 原始作者：ying32
-// QQ: 1444386932、396506155
-// Email：yuanfen3287@vip.qq.com
+// JNI调用单元 by NJTZ 2018-10-06
 //
-// 修改 By：Flying Wang & 爱吃猪头肉
-// 请不要移除以上的任何信息。
-// 请不要将本版本发到城通网盘，否则死全家。
-//
-// Email：1765535979@qq.com
-// QQ Group：165232328
-//
-// 生成时间：2018-10-06 21:53:22
-// 工具版本：1.0.2018.2.26
+// 本单元使用JarOrClass2Pas(原JavaClassToDelphiUnit)转换
+// 以下为 JarOrClass2Pas 工具相关信息：
+// 		原始作者：ying32
+// 		QQ: 1444386932、396506155
+// 		Email：yuanfen3287@vip.qq.com
+// 		修改 By：Flying Wang & 爱吃猪头肉
+// 		生成时间：2018-10-06 21:53:22
+// 		工具版本：1.0.2018.2.26
 //
 // ====================================================
 unit Androidapi.JNI.libIdCardVeri;
