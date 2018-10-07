@@ -177,16 +177,6 @@ begin
 
   try
     try
-      {
-        iRet := FIdCardFic.jnit
-        (StringToJString('3y9w8kYFw1DRBtudjdwPCHLqT9B8jgVY7PjAYDwqxakf'),
-        StringToJString('2p674yayt5gSfBoRfrz6SnBPMoGt2u9uaQUmsfEXb8om'));
-        if iRet <> TJIdCardVerifyError.JavaClass.OK then
-        begin
-        TDialogService.ShowMessage('初始化失败！');
-        Exit;
-        end;
-      }
       tLoadIdCard := 0;
       tLoadRyzp := 0;
       tProcessIdCard := 0;
@@ -259,15 +249,14 @@ begin
         '处理时间：' + #13#10 +
         '载入证件照片：%d毫秒' + #13#10 +
         '处理证件照片：%d毫秒' + #13#10 +
-        '载入证件照片：%d毫秒' + #13#10 +
-        '处理证件照片：%d毫秒' + #13#10 +
+        '载入人员照片：%d毫秒' + #13#10 +
+        '处理人员照片：%d毫秒' + #13#10 +
         '比对照片：%d毫秒' + #13#10 +
         '错误标志：%d',
         [jr.getResult * 100, tLoadIdCard, tProcessIdCard, tLoadRyzp,
         tProcessRyzp, tComareFace, t]));
 
     finally
-      // FIdCardFic.unInit;
       if Assigned(lBytesIdCard) then
         lBytesIdCard.DisposeOf;
       if Assigned(lBytesRyzp) then
